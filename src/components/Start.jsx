@@ -1,5 +1,6 @@
 import { useRef } from "react"
 
+
 export default function Start({setUsername}) {
 
 
@@ -7,6 +8,7 @@ export default function Start({setUsername}) {
 
     const handleClick = () => {
         inputRef.current.value && setUsername(inputRef.current.value);
+        
     };
 
     return (
@@ -20,3 +22,5 @@ export default function Start({setUsername}) {
         </div>
     )
 }
+
+

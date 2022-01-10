@@ -4,6 +4,8 @@ import play from "../sounds/play.mp3"
 import correct from "../sounds/correct.mp3"
 import wrong from "../sounds/wrong.mp3"
 
+
+
 export default function Trivia({
     data, 
     setStop, 
@@ -21,6 +23,8 @@ export default function Trivia({
     // useEffect(() => {
     //     letsPlay();
     //   }, [letsPlay]);
+
+    
 
     useEffect(() => {
         setQuestion(data[questionNumber-1])
@@ -40,6 +44,9 @@ export default function Trivia({
         );
         delay(5000, () => {
             if(a.correct) {
+                if(questionNumber === 14){
+                    window.alert(`Congratulations you are a millionaire!`)
+                };
                 correctAnswer();
                 delay(1000,() => {
                     setQuestionNumber(prev => prev+1);

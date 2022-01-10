@@ -11,7 +11,7 @@ function App() {
   const [stop, setStop] = useState(false);
   const [earned, setEarned] = useState("$ 0");
 
-
+  
 
   const moneyPyramid = useMemo(() => 
     [

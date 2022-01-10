@@ -317,7 +317,7 @@ export const data = [
           },
           {
             text: "Blackbeard",
-            correct: false,
+            correct: true,
           },
           {
             text: "Bartholomew Roberts",
@@ -325,7 +325,7 @@ export const data = [
           },
           {
             text: "Captain Kidd",
-            correct: true,
+            correct: false,
           },
         ],
       },
